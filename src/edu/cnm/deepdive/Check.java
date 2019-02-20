@@ -12,10 +12,12 @@ public class Check {
     for (int i = 0; i < b.length(); i++) {
       c += b.charAt(i) - 48;
     }
-  return c;
+    return c;
   }
+
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(
+        System.in);//Use the args, as a input. Not Scanner. args is an input from the user. This is reading a command line args
     System.out.println("Please, enter a new number: ");
     int a = scanner.nextInt();
     Check.digitSum(a);
