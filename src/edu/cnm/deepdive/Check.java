@@ -18,10 +18,11 @@ public class Check {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please, enter a new number: ");
     int a = scanner.nextInt();
-    System.out.println(digitSum(a));
-    System.out.println(digitSum(a) / 9);
-    System.out.println(a);
-    System.out.println(digitSum(a) / 9);
+    Check.digitSum(a);
+    System.out.println("Please enter a number: " + a);
+    System.out.println("Divide by 9 to get a remainder of " + a / 9);
+    System.out.println("RundigitSum method : " + a);
+    System.out.println("Divide digitSum by 9 to get a remainder of " + digitSum(a) / 9);
   }
 
 
